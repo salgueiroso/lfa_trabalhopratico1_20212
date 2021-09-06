@@ -1,3 +1,7 @@
+## Alunos / Autores
+* Acácio Ramos Salgueiro (1161161268)
+
+
 # Trabalho Prático 1
 ## Descrição
 O trabalho prático consiste na implementação de um programa que permita cadastrar e testar autômatos finitos. A solução deve permitir que o usuário cadastre seu próprio autômato finito determinístico, não-determinístico ou não-determinístico com transições vazias, indicando os estados, as transições e valores do alfabeto. Após o cadastro deve ser possível testar se uma determinada palavra faz parte ou não da linguagem representada pelo autômato.
