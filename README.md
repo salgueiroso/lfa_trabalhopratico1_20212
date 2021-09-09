@@ -1,6 +1,6 @@
 ## Alunos / Autores
 * Acácio Ramos Salgueiro (1161161268)
-
+* Myrelly Byanka Araújo De Oliveira (1172157763)
 
 # Trabalho Prático 1
 ## Descrição
