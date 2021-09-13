@@ -6,6 +6,7 @@ if __name__ == "__main__":
 #states
 q0  
 q1
+
 qf
 #initial
 q0
@@ -18,4 +19,7 @@ qf
 q0:0>q0,q1
 q1:1>qf
 """
-    AutomatoFinitoBase().load(automato)
+    # AutomatoFinitoBase().load(automato)
+    obj = AutomatoFinitoBase()
+    obj.load(automato)
+    assert sorted(obj.states) == sorted(['q0', 'q1', 'qf'])
