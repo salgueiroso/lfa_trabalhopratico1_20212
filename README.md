@@ -2,6 +2,24 @@
 * Acácio Ramos Salgueiro (1161161268)
 * Myrelly Byanka Araújo De Oliveira (1172157763)
 
+# Execução
+
+Antes de tudo é necessário pelo menos o python 3.4 instalado na máquina.
+
+Após instalado deve-se executat o arquivo `install_environment_and_libs.sh` para criação do ambiente virtual e instalação de todos os pacotes pips necessários.
+
+O arquivo `run_tests.sh` executa os testes unitários do projeto.
+
+Para executar é necessário executar da forma abaixo:
+'''
+python ./ --type=DFA --fsmfile=./atquivo_fsm.txt --input=baababababab
+'''
+
+## Valores do Parametro --type
+- DFA
+- NFA
+- eNFA
+
 # Trabalho Prático 1
 ## Descrição
 O trabalho prático consiste na implementação de um programa que permita cadastrar e testar autômatos finitos. A solução deve permitir que o usuário cadastre seu próprio autômato finito determinístico, não-determinístico ou não-determinístico com transições vazias, indicando os estados, as transições e valores do alfabeto. Após o cadastro deve ser possível testar se uma determinada palavra faz parte ou não da linguagem representada pelo autômato.
