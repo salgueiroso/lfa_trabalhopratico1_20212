@@ -10,9 +10,9 @@
             "request": "launch",
             "program": "${workspaceFolder}",
             "args": [
-                "--type=NFA",
-                "--fsmfile=./input_file_nfa.txt",
-                "--input=cbaaa"
+                "--type=DFA",
+                "--fsmfile=./input_file_dfa.txt",
+                "--input=bcaccabcb"
             ],
             "console": "integratedTerminal"
         }
