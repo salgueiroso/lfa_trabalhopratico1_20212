@@ -5,10 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Arquivo Atual",
+            "name": "Python: Projeto Atual",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}",
+            "args": [
+                "--type=NFA",
+                "--fsmfile=./input_file_nfa.txt",
+                "--input=cbaaa"
+            ],
             "console": "integratedTerminal"
         }
     ]
