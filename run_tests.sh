@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-python3 -m pytest ./src/tests/
+source .venv/bin/activate
+
+python -m pytest ./src/tests/
