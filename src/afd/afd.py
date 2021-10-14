@@ -9,7 +9,7 @@ class AFD(AFDBase):
     parsed_states: List[State]
 
     def _extractTransitionsStates(self):
-        pattern = r"(?P<from>\w+):(?P<symbol>[\w+-])>(?P<to>[\w,]+)"
+        pattern = r"(?P<from>\w+):(?P<symbol>[$\w+-])>(?P<to>[\w,]+)"
         for t in self.transitions:
             results = re.search(pattern, t, re.IGNORECASE)
             if not results:

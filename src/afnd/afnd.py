@@ -86,7 +86,6 @@ class AFND(AFD):
             for x in [x.transitions[k] for x in _next_states if x.transitions.get(k, None)]:
                 z.extend(x)
 
-            #next((x for x in _next_states), None).transitions.get(k, None)
             if not z:
                 continue
 

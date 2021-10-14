@@ -29,11 +29,11 @@ class AFDBase:
         return state_name == self.initial
 
     def isAcceptableAlphabet(self, alphabet_simbol: chr) -> bool:
-        return any((x for x in self.alphabet if x == alphabet_simbol))
+        return alphabet_simbol in self.alphabet
 
     def _load(self, fsm_data: str, section: str) -> List[str]:
         section_str = re.search(
-            r"(?:#"+section+")(?P<"+section+">[\r\n\\w :>,]+)", fsm_data, re.MULTILINE+re.IGNORECASE)
+            r"(?:#"+section+")(?P<"+section+">[\r\n\\w :>,$]+)", fsm_data, re.MULTILINE+re.IGNORECASE)
 
         if section_str:
             str = section_str.group(section)
