@@ -6,20 +6,31 @@
 
 Antes de tudo é necessário pelo menos o python 3.4 instalado na máquina.
 
-Após instalado deve-se executat o arquivo `install_environment_and_libs.sh` para criação do ambiente virtual e instalação de todos os pacotes pips necessários.
+Após instalado deve-se executar o arquivo `install_environment_and_libs.sh` para criação do ambiente virtual e instalação de todos os pacotes pips necessários.
 
 O arquivo `run_tests.sh` executa os testes unitários do projeto.
 
-Para executar é necessário executar da forma abaixo:
+Para executar é deve-se entrar na pasta riz do projeto e via `bash` ou `zsh` seguir como o exemplo abaixo:
 
 ```sh
 python ./ --type=DFA --fsmfile=./atquivo_fsm.txt --input=baababababab
 ```
 
-## Valores do Parametro --type
-- DFA
-- NFA
-- eNFA
+## Parâmetros
+
+**type**
+- DFA (Para automato finito deterministico)
+- NFA (Para automato finito não deterministico)
+- eNFA (Para automato finito não deterministico com transição vazia)
+
+**fsmfile**
+- Informar o caminho absoluto ou relativo do arquivo com a definição do automato.
+
+**input**
+- A palavra a ser testada
+
+---
+---
 
 # Trabalho Prático 1
 ## Descrição

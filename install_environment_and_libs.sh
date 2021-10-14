@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-#!/usr/bin/env bash
-
 #Usa o Python3 se este existir
 shopt -s expand_aliases
 command -v python3 >/dev/null 2>&1 && alias python="python3"
