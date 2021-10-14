@@ -11,9 +11,10 @@ Após instalado deve-se executat o arquivo `install_environment_and_libs.sh` par
 O arquivo `run_tests.sh` executa os testes unitários do projeto.
 
 Para executar é necessário executar da forma abaixo:
-'''
+
+```sh
 python ./ --type=DFA --fsmfile=./atquivo_fsm.txt --input=baababababab
-'''
+```
 
 ## Valores do Parametro --type
 - DFA

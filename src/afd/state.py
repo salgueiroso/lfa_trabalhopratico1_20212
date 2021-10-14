@@ -16,7 +16,8 @@ class State:
     def insertTransition(self, alphabet_symbol: str, targetState: str):
         self.transitions[alphabet_symbol] = self.transitions.get(
             alphabet_symbol, [])
-        for item in targetState.split(','):
-            if not any(x for x in self.transitions[alphabet_symbol] if x == item):
-                self.transitions[alphabet_symbol].append(item)
+        if targetState:
+            for item in targetState.split(','):
+                if not any(x for x in self.transitions[alphabet_symbol] if x == item):
+                    self.transitions[alphabet_symbol].append(item)
         self.transitions[alphabet_symbol].sort()
